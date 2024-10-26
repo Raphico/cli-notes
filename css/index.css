@@ -1,0 +1,86 @@
+@layer base {
+    :root {
+        --white: #ffffff;
+        --black: #080808;
+        --orange: #fdb660;
+        --gray: #fbfbfb;
+
+        --fs-body: 1.25rem;
+        --fs-small: 1rem;
+
+        --ff: "Montserrat", sans-serif;
+
+        --fw-medium: 500;
+        --fw-semibold: 600;
+
+        --radius: 5px;
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: var(--ff);
+        background-color: var(--white);
+        color: var(--black);
+        line-height: 1.5;
+    }
+
+    ul {
+        list-style: none;
+    }
+}
+
+@layer components {
+    header {
+        text-align: center;
+        padding-block: 1.5rem;
+    }
+
+    main {
+        width: 90%;
+        max-width: 700px;
+        margin: 0 auto;
+        display: grid;
+        gap: 2rem;
+    }
+
+    article {
+        display: grid;
+        gap: 1rem;
+        background-color: var(--gray);
+        padding: 1.5rem 2rem;
+        border-radius: var(--radius);
+    }
+
+    article h2 {
+        color: var(--black);
+        font-size: var(--fs-body);
+        font-weight: var(--fw-semibold);
+    }
+
+    article ul {
+        display: flex;
+        gap: 1rem;
+    }
+
+    article li {
+        color: var(--orange);
+        font-size: var(--fs-small);
+        font-weight: var(--fw-medium);
+    }
+
+    @media (min-width: 480px) {
+        main {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "intro-to-node",
+  "version": "1.0.0",
+  "description": "intro to nodejs",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "bin": {
+    "note": "./bin/mycli.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "open": "^10.1.0",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
