@@ -18,7 +18,7 @@
 1. clone repository
 
 ```bash
-	git clone https://github.com/Raphico/cli-note
+	git clone git@github.com:Raphico/cli-notes.git
 ```
 
 2. create a symlink
